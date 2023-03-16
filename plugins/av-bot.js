@@ -7,12 +7,13 @@ let av = `./src/mp3/${pickRandom(["Guru", "Guru1", "Guru2", "Guru3", "Guru4"])}.
 conn.sendButton(m.chat, `Hello *${name}* \n \nNeed help? \n`, igfg, null, [
       ['⦙☰ Menu', '/help'],
       ['⦙☰ Menu 2', '/menu2'],
-      ['⌬ Groups', '/gpdylux']
+      ['Ownee
+      r', '/gpdylux']
     ], m)
 conn.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
 } 
 
-handler.customPrefix = /^(bot|guru)$/i
+handler.customPrefix = /^(Ash|guru)$/i
 handler.command = new RegExp
 
 export default handler
